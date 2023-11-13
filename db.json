@@ -1,16 +1,64 @@
 {
-  "posts":[
+  "categories": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "id": 1,
+      "name": "greetings",
+      "description": "Common phrases used to greet others"
+    },
+    {
+      "id": 2,
+      "name": "expressions",
+      "description": "Common expressions and phrases"
+    },
+    {
+      "id": 3,
+      "name": "food",
+      "description": "Words related to food and dining"
     }
   ],
-  "comments" : [
+  "vocabulary": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "id": 1,
+      "arabic_word": "مرحبا",
+      "hebrew_word": "שלום",
+      "english_translation": "hello",
+      "category_id": 1,
+      "arabic_pronunciation_in_hebrew": "marhaba",
+      "hebrew_pronunciation_in_arabic": "shalom"
+    },
+    {
+      "id": 2,
+      "arabic_word": "شكرا",
+      "hebrew_word": "תודה",
+      "english_translation": "thank you",
+      "category_id": 2,
+      "arabic_pronunciation_in_hebrew": "shukran",
+      "hebrew_pronunciation_in_arabic": "toda"
+    },
+    {
+      "id": 3,
+      "arabic_word": "طعام",
+      "hebrew_word": "אוכל",
+      "english_translation": "food",
+      "category_id": 3,
+      "arabic_pronunciation_in_hebrew": "ta'am",
+      "hebrew_pronunciation_in_arabic": "okhel"
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "arabic": "مرحبا، كيف حالك؟",
+      "hebrew": "שלום, מה שלומך?",
+      "english": "Hello, how are you?",
+      "vocabulary_ids": [1]
+    },
+    {
+      "id": 2,
+      "arabic": "شكرا على الطعام.",
+      "hebrew": "תודה על האוכל.",
+      "english": "Thank you for the food.",
+      "vocabulary_ids": [2, 3]
     }
   ]
 }
